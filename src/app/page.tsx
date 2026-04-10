@@ -1,9 +1,25 @@
+import AnnouncementBar from "@/components/nike/AnnouncementBar";
+import Header from "@/components/nike/Header";
+import Hero from "@/components/nike/Hero";
+import CategoryBar from "@/components/nike/CategoryBar";
+import FeaturedDuo from "@/components/nike/FeaturedDuo";
+import ProductGrid from "@/components/nike/ProductGrid";
+import MemberBanner from "@/components/nike/MemberBanner";
+import Footer from "@/components/nike/Footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
+    <>
+      <AnnouncementBar />
+      <Header />
+      <main>
+        <Hero />
+        <CategoryBar />
+        <FeaturedDuo />
+        <ProductGrid />
+        <MemberBanner />
+      </main>
+      <Footer />
+    </>
   );
 }
