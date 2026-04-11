@@ -19,6 +19,7 @@ export default function Home() {
         <CategoryBar />
         <FeaturedDuo />
         <ProductGrid />
+        <AboutUs />
         <MemberBanner />
       </main>
       <Footer />
