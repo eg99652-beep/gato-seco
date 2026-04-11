@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutUs() {
   return (
     <section className="w-full px-6 py-20 md:py-28" style={{ background: "#f7f5f0" }}>
@@ -8,7 +10,7 @@ export default function AboutUs() {
             className="text-xs font-semibold uppercase tracking-widest mb-4"
             style={{ color: "#2d4a2d", fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Nosotros
+            El por qué
           </p>
           <h2
             className="leading-tight mb-6"
@@ -19,23 +21,36 @@ export default function AboutUs() {
               color: "#1a1a18",
             }}
           >
-            Curado con criterio,<br />vendido con honestidad.
+            No necesitas mucho dinero<br />para vestirte bien.
           </h2>
           <p
             className="text-base leading-relaxed"
             style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Gato Seco nació de una idea simple: la ropa buena no debería estar guardada en un clóset.
-            Cada pieza pasa por nuestra revisión — marcas reales, tallas claras, condición honesta.
-            Nada de fotos con filtro exagerado ni sorpresas al recibir.
+            Hola, soy Enrique. Te hicieron pensar que el estilo depende de cuánto gastas,
+            pero en realidad depende de cómo eliges. Hoy compras más, usas menos… y terminas
+            con ropa, pero sin estilo.
+            <br /><br />
+            Por eso creé este espacio: para ofrecerte piezas de marca, con calidad y
+            personalidad, que realmente valen la pena.
           </p>
         </div>
-        {/* Imagen placeholder */}
+
+        {/* Imagen con logo */}
         <div
-          className="w-full aspect-[4/5] rounded-2xl overflow-hidden"
+          className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative"
           style={{ background: "linear-gradient(135deg, #2d4a2d 0%, #3d5c3a 100%)" }}
         >
-          <div className="w-full h-full flex items-end p-6">
+          <div className="w-full h-full flex flex-col items-center justify-center">
+            <Image
+              src="/logo-gato.jpg"
+              alt="Gato Seco logo"
+              width={220}
+              height={220}
+              className="rounded-full object-cover"
+            />
+          </div>
+          <div className="absolute bottom-0 w-full flex items-end justify-start p-6">
             <span
               className="text-white/60 text-xs uppercase tracking-widest"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
