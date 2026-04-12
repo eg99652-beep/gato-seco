@@ -6,7 +6,7 @@ export default function AboutUs() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
+            className="text-xs font-semibold uppercase tracking-widest mb-6"
             style={{ color: "#2d4a2d", fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
             El por qué
@@ -20,18 +20,23 @@ export default function AboutUs() {
               color: "#1a1a18",
             }}
           >
-            No necesitas mucho dinero<br />para vestirte bien.
+            Antes creía que el estilo<br />era cuestión de dinero.
           </h2>
-          <p
-            className="text-base leading-relaxed"
-            style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}
-          >
-            Hola, soy Enrique. Te hicieron pensar que el estilo depende de cuánto gastas,
-            pero en realidad depende de cómo eliges. Hoy compras más, usas menos… y terminas
-            con ropa, pero sin estilo.
-            <br /><br />
-            Por eso creé este espacio: para ofrecerte piezas de marca, con calidad y
-            personalidad, que realmente valen la pena.
+          <div style={{ width: "36px", height: "2px", background: "#2d4a2d", borderRadius: "2px", marginBottom: "1.8rem" }} />
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
+            Hola, soy Enrique.
+          </p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
+            Crecí con la idea de que para vestirse bien había que gastar bastante. Y durante mucho tiempo lo creí.
+          </p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
+            Hoy sé que no es así. <strong style={{ color: "#1a1a18", fontWeight: 500 }}>El estilo es cuestión de elegir bien.</strong>
+          </p>
+          <p className="text-base leading-relaxed mb-6" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
+            Creé este espacio para ayudarte a vestir con intención — piezas de marca, con calidad real, sin gastar de más.
+          </p>
+          <p style={{ color: "#2d4a2d", fontSize: "14px", fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "0.05em" }}>
+            — Enrique
           </p>
         </div>
         <div
