@@ -27,6 +27,7 @@ export async function POST(req: NextRequest) {
       tag: body.tag ?? "Disponible",
       disponible: true,
       foto_url: body.foto_url ?? null,
+        genero: body.genero ?? "Unisex",
       whatsapp_msg: body.whatsapp_msg ?? null,
     })
     .select()
