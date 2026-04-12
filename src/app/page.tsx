@@ -18,7 +18,7 @@ export default function Home() {
         <section id="nosotros">
           <AboutUs />
         </section>
-        <CategoryBar />
+
         <FeaturedDuo />
 
         <MemberBanner />
