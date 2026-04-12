@@ -1,3 +1,4 @@
+import Link from "next/link";
 interface FeaturedCard {
   label: string;
   headline: string;
@@ -66,7 +67,7 @@ export default function FeaturedDuo() {
               >
                 {card.sub}
               </p>
-              <a
+              <Link
                 href={card.href}
                 className={`inline-block font-medium text-sm px-6 py-2.5 rounded-full transition-all ${
                   card.textDark
@@ -76,7 +77,7 @@ export default function FeaturedDuo() {
                 style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
                 {card.cta}
-              </a>
+              </Link>
             </div>
           </div>
         ))}
