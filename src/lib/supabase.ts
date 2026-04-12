@@ -10,6 +10,7 @@ export type ProductoRow = {
   disponible: boolean;
   tag: string;
   foto_url: string | null;
+  genero: string | null;
   whatsapp_msg: string | null;
   created_at: string;
   orden: number;
