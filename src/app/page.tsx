@@ -15,11 +15,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        
         <CategoryBar />
         <FeaturedDuo />
-        <ProductGrid />
         <AboutUs />
+        <ProductGrid />
         <MemberBanner />
       </main>
       <Footer />
