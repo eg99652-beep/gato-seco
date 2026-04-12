@@ -31,6 +31,7 @@ type FormData = {
   talla: string;
   condicion: string;
   tag: string;
+  genero: string;
   foto_url: string;
 };
 
@@ -145,6 +146,7 @@ export default function DashboardClient({
       talla: p.talla,
       condicion: p.condicion,
       tag: p.tag,
+      genero: p.genero ?? "Unisex",
       foto_url: p.foto_url ?? "",
     });
     setPreviewUrl(p.foto_url ?? "");
