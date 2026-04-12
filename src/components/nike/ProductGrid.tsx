@@ -38,7 +38,7 @@ export default async function ProductGrid() {
     productos = staticProductos.map((p) => ({
       id: p.id, marca: p.marca, nombre: p.nombre, precio: p.precio,
       talla: p.talla, condicion: p.condicion, disponible: p.disponible,
-      tag: p.tag, foto_url: null, whatsapp_msg: p.whatsappMsg ?? null,
+      tag: p.tag, foto_url: null, genero: null, whatsapp_msg: p.whatsappMsg ?? null,
       created_at: new Date().toISOString(), orden: 0,
     }));
   }
