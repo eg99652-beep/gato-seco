@@ -19,7 +19,7 @@ export default function AboutUs() {
         <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative flex items-center justify-center" style={{ background: "#2d4a2d" }}>
           <div style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden" }}>
             <Image
-              src="/logo-gato.jpg"
+              src="/logo-gato.png"
               alt="Gato Seco logo"
               fill
               className="object-cover"
