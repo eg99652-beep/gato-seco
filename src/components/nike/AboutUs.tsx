@@ -4,7 +4,6 @@ export default function AboutUs() {
   return (
     <section className="w-full px-6 py-20 md:py-28" style={{ background: "#f7f5f0" }}>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Texto */}
         <div>
           <p
             className="text-xs font-semibold uppercase tracking-widest mb-4"
@@ -35,21 +34,18 @@ export default function AboutUs() {
             personalidad, que realmente valen la pena.
           </p>
         </div>
-
-        {/* Imagen con logo */}
         <div
-          className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative"
-          style={{ background: "linear-gradient(135deg, #2d4a2d 0%, #3d5c3a 100%)" }}
+          className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative flex items-center justify-center"
+          style={{ background: "#2d4a2d" }}
         >
-          <div className="w-full h-full flex flex-col items-center justify-center">
-            <Image
-              src="/logo-gato.jpg"
-              alt="Gato Seco logo"
-              width={220}
-              height={220}
-              className="rounded-full object-cover"
-            />
-          </div>
+          <Image
+            src="/logo-gato.jpg"
+            alt="Gato Seco logo"
+            width={320}
+            height={320}
+            className="object-contain"
+            style={{ borderRadius: "50%" }}
+          />
           <div className="absolute bottom-0 w-full flex items-end justify-start p-6">
             <span
               className="text-white/60 text-xs uppercase tracking-widest"
