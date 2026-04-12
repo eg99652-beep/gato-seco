@@ -14,7 +14,7 @@ const cards: FeaturedCard[] = [
     headline: "Hombre",
     sub: "Camisas, chaquetas y pantalones seleccionados a mano.",
     cta: "Ver piezas",
-    href: "#hombre",
+    href: "/catalogo?genero=Hombre",
     gradient: "linear-gradient(160deg, #1a1a18 0%, #2d4a2d 60%, #1a2e1a 100%)",
   },
   {
@@ -22,7 +22,7 @@ const cards: FeaturedCard[] = [
     headline: "Mujer",
     sub: "Blusas, abrigos y conjuntos con mucho carácter.",
     cta: "Ver piezas",
-    href: "#mujer",
+    href: "/catalogo?genero=Mujer",
     gradient: "linear-gradient(160deg, #e8e4db 0%, #d4cfc6 50%, #c4bfb5 100%)",
     textDark: true,
   },
