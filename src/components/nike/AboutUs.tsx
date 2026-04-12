@@ -23,7 +23,7 @@ export default function AboutUs() {
               alt="Gato Seco logo"
               fill
               className="object-cover"
-              style={{ transform: "scale(1.1)", transformOrigin: "center" }}
+              style={{ transform: "scale(0.8)", transformOrigin: "center" }}
             />
           </div>
           <div className="absolute bottom-0 w-full flex items-end justify-start p-6">
