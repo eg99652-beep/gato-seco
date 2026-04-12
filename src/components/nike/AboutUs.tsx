@@ -23,34 +23,24 @@ export default function AboutUs() {
             Antes creía que el estilo<br />era cuestión de dinero.
           </h2>
           <div style={{ width: "36px", height: "2px", background: "#2d4a2d", borderRadius: "2px", marginBottom: "1.8rem" }} />
-          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
-            Hola, soy Enrique.
-          </p>
-          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
-            Crecí con la idea de que para vestirse bien había que gastar bastante. Y durante mucho tiempo lo creí.
-          </p>
-          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
-            Hoy sé que no es así. <strong style={{ color: "#1a1a18", fontWeight: 500 }}>El estilo es cuestión de elegir bien.</strong>
-          </p>
-          <p className="text-base leading-relaxed mb-6" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>
-            Creé este espacio para ayudarte a vestir con intención — piezas de marca, con calidad real, sin gastar de más.
-          </p>
-          <p style={{ color: "#2d4a2d", fontSize: "14px", fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "0.05em" }}>
-            — Enrique
-          </p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Hola, soy Enrique.</p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Crecí con la idea de que para vestirse bien había que gastar bastante. Y durante mucho tiempo lo creí.</p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Hoy sé que no es así. <strong style={{ color: "#1a1a18", fontWeight: 500 }}>El estilo es cuestión de elegir bien.</strong></p>
+          <p className="text-base leading-relaxed mb-6" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Creé este espacio para ayudarte a vestir con intención — piezas de marca, con calidad real, sin gastar de más.</p>
+          <p style={{ color: "#2d4a2d", fontSize: "14px", fontFamily: "var(--font-dm-sans), sans-serif", letterSpacing: "0.05em" }}>— Enrique</p>
         </div>
         <div
           className="w-full aspect-[4/5] rounded-2xl overflow-hidden relative flex items-center justify-center"
           style={{ background: "#2d4a2d" }}
         >
-          <Image
-            src="/logo-gato.jpg"
-            alt="Gato Seco logo"
-            width={320}
-            height={320}
-            className="object-contain"
-            style={{ borderRadius: "50%" }}
-          />
+          <div style={{ width: "85%", aspectRatio: "1/1", position: "relative" }}>
+            <Image
+              src="/logo-gato.jpg"
+              alt="Gato Seco logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           <div className="absolute bottom-0 w-full flex items-end justify-start p-6">
             <span
               className="text-white/60 text-xs uppercase tracking-widest"
