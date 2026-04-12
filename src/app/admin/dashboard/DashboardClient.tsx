@@ -478,20 +478,6 @@ export default function DashboardClient({
             </div>
           </div>
 
-                    {/* Genero */}
-          <div>
-            <label className="block text-xs font-semibold uppercase tracking-widest text-[#8a8680] mb-2">Género</label>
-            <div className="flex gap-2">
-              {["Hombre","Mujer","Unisex"].map((g) => (
-                <button key={g} type="button" onClick={() => setForm((f) => ({ ...f, genero: g }))}
-                  className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all border ${
-                    form.genero === g ? "bg-[#2d4a2d] text-[#f7f5f0] border-[#2d4a2d]" : "bg-white text-[#8a8680] border-[#d4cfc6] hover:border-[#2d4a2d]"
-                  }`}>{g}</button>
-              ))}
-            </div>
-          </div>
-
-                    {/* Tag */}
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-widest text-[#8a8680] mb-2">
                   Etiqueta
