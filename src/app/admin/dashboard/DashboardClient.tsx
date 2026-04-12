@@ -465,7 +465,7 @@ export default function DashboardClient({
                 </select>
               </div>
 
-              {/* Genero */}
+    {/* Genero */}
           <div>
             <label className="block text-xs font-semibold uppercase tracking-widest text-[#8a8680] mb-2">Género</label>
             <div className="flex gap-2">
@@ -478,7 +478,7 @@ export default function DashboardClient({
             </div>
           </div>
 
-          {/* Genero */}
+                    {/* Genero */}
           <div>
             <label className="block text-xs font-semibold uppercase tracking-widest text-[#8a8680] mb-2">Género</label>
             <div className="flex gap-2">
