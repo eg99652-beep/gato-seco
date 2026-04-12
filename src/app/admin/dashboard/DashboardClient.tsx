@@ -43,6 +43,7 @@ const emptyForm: FormData = {
   condicion: "Como nuevo",
   tag: "Disponible",
   foto_url: "",
+  genero: "Unisex",
 };
 
 function Toggle({
