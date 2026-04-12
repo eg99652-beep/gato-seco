@@ -20,7 +20,7 @@ export default function Home() {
         </section>
         <CategoryBar />
         <FeaturedDuo />
-        <ProductGrid />
+
         <MemberBanner />
       </main>
       <Footer />
