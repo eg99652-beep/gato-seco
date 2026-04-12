@@ -22,8 +22,8 @@ export default function AboutUs() {
               src="/logo-gato.png"
               alt="Gato Seco logo"
               fill
-              className="object-cover"
-              style={{ transform: "scale(0.45)", transformOrigin: "center" }}
+              className="object-contain"
+              style={{  }}
             />
           </div>
           <div className="absolute bottom-0 w-full flex items-end justify-start p-6">
