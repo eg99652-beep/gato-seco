@@ -17,7 +17,9 @@ export default function Home() {
         <Hero />
         <CategoryBar />
         <FeaturedDuo />
-        <AboutUs />
+        <section id="nosotros">
+          <AboutUs />
+        </section>
         <ProductGrid />
         <MemberBanner />
       </main>
