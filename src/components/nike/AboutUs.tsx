@@ -10,7 +10,7 @@ export default function AboutUs() {
             Antes creía que el estilo<br />era cuestión de dinero.
           </h2>
           <div style={{ width: "36px", height: "2px", background: "#2d4a2d", borderRadius: "2px", marginBottom: "1.8rem" }} />
-          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Hola, soy Enrique.</p>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Hola,</p>
           <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Crecí con la idea de que para vestirse bien había que gastar bastante. Y durante mucho tiempo lo creí.</p>
           <p className="text-base leading-relaxed mb-4" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Hoy sé que no es así. <strong style={{ color: "#1a1a18", fontWeight: 500 }}>El estilo es cuestión de elegir bien.</strong></p>
           <p className="text-base leading-relaxed mb-6" style={{ color: "#5a5a52", fontFamily: "var(--font-dm-sans), sans-serif" }}>Creé este espacio para ayudarte a vestir con intención — piezas de marca, con calidad real, sin gastar de más.</p>
