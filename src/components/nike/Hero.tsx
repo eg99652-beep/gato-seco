@@ -17,7 +17,7 @@ export default function Hero() {
           className="text-[#e8e4db]/70 text-xs font-medium tracking-widest uppercase mb-4"
           style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
         >
-          Tienda de ropa · El Salvador
+          Tienda de ropa - El Salvador
         </p>
         <h1
           className="text-[#f7f5f0] leading-none tracking-tight mb-5"
