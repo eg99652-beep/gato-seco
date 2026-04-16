@@ -70,13 +70,13 @@ export default function Footer() {
                 +503 7005 9191
               </a>
               <a
-                href="https://instagram.com/gatoseco"
+                href="https://instagram.com/gatoseco_sv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-[#1a1a18]/70 hover:text-[#2d4a2d] transition-colors"
               >
                 <Camera size={14} />
-                @gatoseco
+                @gatoseco_sv
               </a>
             </div>
           </div>
