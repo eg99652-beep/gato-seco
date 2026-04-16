@@ -6,6 +6,7 @@ interface FeaturedCard {
   cta: string;
   href: string;
   gradient: string;
+  image?: string;
   textDark?: boolean;
 }
 
@@ -17,6 +18,7 @@ const cards: FeaturedCard[] = [
     cta: "Ver piezas",
     href: "/catalogo?genero=Hombre",
     gradient: "linear-gradient(160deg, #1a1a18 0%, #2d4a2d 60%, #1a2e1a 100%)",
+    image: "/hombre-banner.jpg",
   },
   {
     label: "Nueva entrada",
@@ -25,6 +27,7 @@ const cards: FeaturedCard[] = [
     cta: "Ver piezas",
     href: "/catalogo?genero=Mujer",
     gradient: "linear-gradient(160deg, #e8e4db 0%, #d4cfc6 50%, #c4bfb5 100%)",
+    image: "/mujer-banner.jpg",
     textDark: true,
   },
 ];
@@ -38,7 +41,7 @@ export default function FeaturedDuo() {
             {/* Image placeholder */}
             <div
               className="w-full aspect-[4/5] md:aspect-[3/4]"
-              style={{ background: card.gradient }}
+              style={{ background: card.image ? `url(${card.image}) center/cover no-repeat` : card.gradient }}
               aria-hidden="true"
             />
             {/* Text overlay */}
