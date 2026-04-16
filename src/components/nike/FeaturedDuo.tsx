@@ -41,7 +41,7 @@ export default function FeaturedDuo() {
             {/* Image placeholder */}
             <div
               className="w-full aspect-[4/5] md:aspect-[3/4]"
-              style={{ background: card.image ? `url(${card.image}) center/cover no-repeat` : card.gradient }}
+              style={{ ...(card.image ? { backgroundImage: `url(${card.image})`, backgroundSize: "cover", backgroundPosition: "center" } : { background: card.gradient }) }}
               aria-hidden="true"
             />
             {/* Text overlay */}
