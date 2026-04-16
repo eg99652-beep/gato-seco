@@ -45,7 +45,7 @@ export default function FeaturedDuo() {
               aria-hidden="true"
             />
             {/* Text overlay */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%)" }}>
               <p
                 className={`text-xs font-medium uppercase tracking-widest mb-1 ${
                   "text-[#f7f5f0]/80"
