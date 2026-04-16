@@ -76,7 +76,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-sm text-[#1a1a18]/70 hover:text-[#2d4a2d] transition-colors"
               >
                 <Camera size={14} />
-                @gatoseco_sv
+                @gatoseco_sv_sv
               </a>
             </div>
           </div>

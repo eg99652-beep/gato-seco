@@ -21,11 +21,11 @@ export default function MemberBanner() {
           className="text-[#e8e4db] text-lg font-semibold mb-8"
           style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
         >
-          @gatoseco
+          @gatoseco_sv
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <a
-            href="https://instagram.com/gatoseco"
+            href="https://instagram.com/gatoseco_sv"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#f7f5f0] text-[#1a1a18] font-medium text-sm px-7 py-3 rounded-full hover:bg-[#e8e4db] transition-colors flex items-center gap-2"
