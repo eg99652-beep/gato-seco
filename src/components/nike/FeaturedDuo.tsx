@@ -48,7 +48,7 @@ export default function FeaturedDuo() {
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
               <p
                 className={`text-xs font-medium uppercase tracking-widest mb-1 ${
-                  card.textDark ? "text-[#1a1a18]/60" : "text-[#f7f5f0]/60"
+                  "text-[#f7f5f0]/80"
                 }`}
                 style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
@@ -56,7 +56,7 @@ export default function FeaturedDuo() {
               </p>
               <h2
                 className={`font-black text-4xl md:text-5xl leading-tight mb-2 ${
-                  card.textDark ? "text-[#1a1a18]" : "text-[#f7f5f0]"
+                  "text-[#f7f5f0]"
                 }`}
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
@@ -64,7 +64,7 @@ export default function FeaturedDuo() {
               </h2>
               <p
                 className={`text-sm mb-5 max-w-[200px] leading-relaxed ${
-                  card.textDark ? "text-[#1a1a18]/70" : "text-[#f7f5f0]/70"
+                  "text-[#f7f5f0]/80"
                 }`}
                 style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
               >
