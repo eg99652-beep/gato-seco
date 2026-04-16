@@ -28,7 +28,6 @@ const cards: FeaturedCard[] = [
     href: "/catalogo?genero=Mujer",
     gradient: "linear-gradient(160deg, #e8e4db 0%, #d4cfc6 50%, #c4bfb5 100%)",
     image: "/mujer-banner.jpg",
-    textDark: true,
   },
 ];
 
