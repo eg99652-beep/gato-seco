@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden">
       {/* Hero image placeholder — earthy/warm tone matching brand */}
       <div
-        className="w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-[16/7]"
+        className="w-full min-h-[500px] aspect-[16/9] md:aspect-[21/9] lg:aspect-[16/7]"
         style={{
           background:
             "linear-gradient(150deg, #1a1a18 0%, #2d4a2d 40%, #3d5c3a 65%, #1a1a18 100%)",
