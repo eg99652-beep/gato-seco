@@ -44,7 +44,7 @@ export default function FeaturedDuo() {
               aria-hidden="true"
             />
             {/* Text overlay */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%)" }}>
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)" }}>
               <p
                 className={`text-xs font-medium uppercase tracking-widest mb-1 ${
                   card.textDark ? "text-[#1a1a18]/80" : "text-[#f7f5f0]/80"
