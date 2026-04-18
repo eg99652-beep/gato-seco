@@ -27,25 +27,72 @@ export default function Hero() {
   const next = () => setCurrent((c) => (c + 1) % slides.length);
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#1a1a18]" style={{ height: "90vh" }}>
+    <section className="relative w-full overflow-hidden" style={{ height: "90vh" }}>
       {slides.map((src, i) => (
         <img
           key={src}
           src={src}
           alt=""
-          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700"
+          className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700"
           style={{ opacity: i === current ? 1 : 0 }}
         />
       ))}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/50" />
       <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 px-6 text-center">
         <p className="text-[#e8e4db]/70 text-xs font-medium tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
           Tienda de ropa - El Salvador
         </p>
-        <h1 className="text-[#f7f5f0] leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 6rem)", textShadow: "0 2px 12px rgba(0,0,0,0.7)" }}>
+        <h1 className="text-[#f7f5f0] leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 6rem)", textShadow: "0 2px 16px rgba(0,0,0,0.8)" }}>
+          Ropa buena,<br />precios que no<br
+cat > ~/gato-seco/src/components/nike/Hero.tsx << 'ENDOFFILE'
+"use client";
+
+import { useState, useEffect } from "react";
+
+const slides = [
+  "/slider-1.jpg",
+  "/slider-2.jpg",
+  "/slider-3.jpg",
+  "/slider-4.jpg",
+  "/slider-5.jpg",
+  "/slider-6.jpg",
+  "/slider-7.jpg",
+  "/slider-8.jpg",
+];
+
+export default function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
+  const next = () => setCurrent((c) => (c + 1) % slides.length);
+
+  return (
+    <section className="relative w-full overflow-hidden" style={{ height: "90vh" }}>
+      {slides.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700"
+          style={{ opacity: i === current ? 1 : 0 }}
+        />
+      ))}
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 px-6 text-center">
+        <p className="text-[#e8e4db]/70 text-xs font-medium tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+          Tienda de ropa - El Salvador
+        </p>
+        <h1 className="text-[#f7f5f0] leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 6rem)", textShadow: "0 2px 16px rgba(0,0,0,0.8)" }}>
           Ropa buena,<br />precios que no<br />dan miedo.
         </h1>
-        <p className="text-[#e8e4db]/80 text-sm md:text-base mb-8 max-w-sm" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
+        <p className="text-[#e8e4db]/90 text-sm md:text-base mb-8 max-w-sm" style={{ fontFamily: "var(--font-dm-sans), sans-serif", textShadow: "0 1px 8px rgba(0,0,0,0.8)" }}>
           Piezas seleccionadas a mano. Marcas reales, condicion honesta. Moda sin el precio inflado.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
