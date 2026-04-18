@@ -43,7 +43,7 @@ export default function Hero() {
         <p className="text-[#e8e4db]/70 text-xs font-medium tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
           Tienda de ropa - El Salvador
         </p>
-        <h1 className="text-[#f7f5f0] leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 6rem)" }}>
+        <h1 className="text-[#f7f5f0] leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", textShadow: "0 2px 12px rgba(0,0,0,0.7)", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 6rem)" }}>
           Ropa buena,<br />precios que no<br />dan miedo.
         </h1>
         <p className="text-[#e8e4db]/80 text-sm md:text-base mb-8 max-w-sm" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
@@ -58,8 +58,8 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-9 h-9 flex items-center justify-center text-xl transition-all">&lsaquo;</button>
-      <button onClick={next} className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-9 h-9 flex items-center justify-center text-xl transition-all">&rsaquo;</button>
+      <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/55 hover:bg-black/55 text-white rounded-full w-9 h-9 flex items-center justify-center text-xl transition-all">&lsaquo;</button>
+      <button onClick={next} className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/55 hover:bg-black/55 text-white rounded-full w-9 h-9 flex items-center justify-center text-xl transition-all">&rsaquo;</button>
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
         {slides.map((_, i) => (
           <button key={i} onClick={() => setCurrent(i)} className="rounded-full transition-all" style={{ width: i === current ? 20 : 6, height: 6, background: i === current ? "#f7f5f0" : "rgba(247,245,240,0.4)" }} />
